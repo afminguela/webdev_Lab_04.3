@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto:100,300,700");
+
+:root {
+  --blue: rgb(67, 163, 230);
+  --darkBlue: rgb(25, 33, 41);
+  --text: (0, 0, 0);
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+
+  size: 10px;
+  line-height: 3.5em;
+  font-weight: 300;
+}
+/* CSS multiselector example */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto"; /*  define font-family here  */
+}
+
+h1 {
+  size: 9em;
+}
+
+h2 {
+  size: 5em;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 4em;
+}
+
+h3 {
+  size: 4.2em;
+  text-align: center;
+  line-height: 1em;
+}
+
+h4 {
+  size: 1.5em;
+  letter-spacing: 0.4px;
+  line-height: 1em;
+}
+h5 {
+  size: 1.2em;
+  line-height: 1em;
+}
+/*.    ------------------------ navbar --------------*/
+.nav-bar {
+  background-color: var(--darkBlue);
+  color: white;
+}
+.nav-bar a {
+  color: white;
+  text-decoration: none;
+  font-size: 2em;
+}
+/*.    ------------------------ header. --------------*/
+.jeader {
+  background-image: url("https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironhack-skydive-background.jpg");
+  background-position: 0, 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 650px;
+}
+
+.jeader h2 {
+  color: white;
+  text-shadow: #020819 8px -20px 9px;
+}
+.jeader-quote {
+  size: 2.5em;
+}
+.dark-selector {
+  background-color: var(--darkBlue);
+  color: white;
+}
+/*.    ------------------------ Secciton 1 general info-------------*/
+#general-information p {
+  font-size: 2em;
+  font-weight: 100;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+}
+
+#general-information article {
+  display: flex;
+  flex-direction: column;
+}
+
+.lkn-btn {
+  background-color: var(--blue);
+  color: white;
+  font-family: "Roboto" Condensed;
+  font-size: 2em;
+  letter-spacing: 0.5px;
+  text-align: center;
+  text-decoration: none;
+}
+/*.    ------------------------ Secciton 2 structure-------------- */
+.service-box{
+
+Font-size: 1.7em;
+text-align: center;
+}
+
+.service-box img {
+  width: 125px;
+}
+
+/*.    ------------------------ Secciton 2 structure-------------- */
+
+#team .text-section{
+    Font-size: 1.9em;
+text-align: center;
+}
+#team .member-name{
+    Font-size: 1.5em;
+    font-weight: 700;
+
+}
+#team img {
+  width: 250px;
+  height: 180px;
+}
+
+.footer{
+
+}
+
+.address{
+    font-style: normal;
+    font-size: 0.8em;
+}
+
+.footer a {
+  color: var(--blue);
+  text-decoration: none;
+  list-style: none;
+}
