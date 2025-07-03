@@ -5,19 +5,21 @@
   --darkBlue: rgb(25, 33, 41);
   --text: (0, 0, 0);
 }
-html,
+
+*, html,
 body {
   margin: 0;
   padding: 0;
 }
 
 body {
-  size: 10px;
+  font-size: 10px;
   line-height: 3.5em;
   font-weight: 300;
-
-  font-family: "Roboto"; /*  define font-family here  */
+ 
+  /*  define font-family here  */
 }
+
 /* CSS multiselector example */
 
 h1,
@@ -40,7 +42,7 @@ h2 {
   font-size: 5em;
   text-align: center;
   text-transform: uppercase;
-  line-height: 4em;
+  
 }
 
 h3 {
@@ -55,12 +57,14 @@ h4 {
   margin-bottom: 15px;
   line-height: 1em;
 }
+
 h5 {
   font-size: 1.2em;
   line-height: 1em;
   margin-top: 0px;
   margin-bottom: 0px;
 }
+
 /*.    ------------------------ navbar --------------*/
 .nav-bar {
   background-color: var(--darkBlue);
@@ -68,18 +72,22 @@ h5 {
   padding: 14px 0;
   margin: 0;
 }
+
 .nav-bar ul {
-  flex-direction: row;
+  /* flex-direction: row; */
   width: 1200px;
   margin: 0 auto;
   display: flex;
   justify-content: space-evenly;
+   list-style: none;
 }
-.nav-bar li {
-  list-style: none;
+
+/* .nav-bar li {
+ 
   line-height: 2.2em;
   text-align: center;
-}
+} */
+
 .nav-bar a {
   color: white;
   text-decoration: none;
@@ -97,31 +105,37 @@ h5 {
   position: relative;
 }
 
-.jeader h2 {
+.jeader-h2 {
   color: white;
   text-shadow: #020819 8px -20px 9px;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  font-size: 30px;
+
+
+  
 }
+
 .jeader img {
   width: 50px;
 }
+
 .jeader-quote {
-  size: 2.5em;
+  font-size: 2.5em;
   padding-top: 100px;
   left: 10%;
   bottom: 100px;
+  position:absolute;
+  font-family: "Roboto Condensed"
 }
 
 .jeader-quote p {
   padding: 0;
   line-height: 0.5em;
 }
+
 .dark-selector {
   background-color: var(--darkBlue);
   color: white;
 }
+
 /*.    ------------------------ Secciton 1 general info-------------*/
 
 #general-information {
@@ -131,6 +145,7 @@ h5 {
   flex: 3, 1f;
   padding: 20px;
 }
+
 #general-information p {
   font-size: 2em;
   font-weight: 100;
@@ -157,6 +172,7 @@ h5 {
   text-decoration: none;
   padding: 10px 30px;
 }
+
 /*.    ------------------------ Secciton 2 structure-------------- */
 #structure {
   width: 1200px;
@@ -166,7 +182,8 @@ h5 {
   flex-direction: column;
   align-items: center;
 }
-#structure > div {
+
+#structure>div {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -195,18 +212,21 @@ h5 {
   padding: 75px 0;
   margin: 0 auto;
 }
+
 #team .text-section {
   font-size: 1.9em;
   text-align: center;
   width: 60%;
   margin: 10px auto;
 }
-#team > div {
+
+#team>div {
   display: flex;
   justify-content: space-evenly;
   flex-direction: row;
 }
-#team > div > article {
+
+#team>div>article {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -217,6 +237,7 @@ h5 {
   font-size: 1.5em;
   font-weight: 700;
 }
+
 #team img {
   width: 250px;
   height: 180px;
@@ -234,6 +255,7 @@ td {
   padding: 5px 10px;
   text-align: center;
 }
+
 /*.    ------------------------ Secciton 5 Form Extra -------------- */
 .slot-form-container {
   width: 40%;
@@ -241,10 +263,12 @@ td {
   font-size: 1.5em;
   text-align: center;
 }
+
 .slot-form-container label {
   line-height: 15px;
   margin: 5px;
 }
+
 .slot-form-container input,
 select {
   height: 20px;
@@ -252,11 +276,13 @@ select {
   padding: 3px;
   width: 100%;
 }
+
 /*.    ------------------------ Footer -------------- */
-#foot{
+#foot {
   display: flex;
   flex-direction: row;
 }
+
 .footer {
   font-size: 1.9em;
   text-align: center;
@@ -265,7 +291,7 @@ select {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-direction:column;
+  flex-direction: column;
 }
 
 .address {
@@ -273,6 +299,7 @@ select {
   font-size: 0.8em;
   margin-bottom: 30px;
 }
+
 .footer ul {
   list-style: none;
   padding: 0;
@@ -288,6 +315,6 @@ select {
 }
 
 .map-frame {
-    height: 375px;
-    width: 60%;
+  height: 375px;
+  width: 60%;
 }
