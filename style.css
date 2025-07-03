@@ -244,9 +244,21 @@ h5 {
 }
 
 /*.    ------------------------ Secciton 4 schedule -------------- */
+.container {
+  font-size: 1.7em;
+  text-align: center;
+  border: 2px solid #eee;
+  border-radius: 20px;
+  box-sizing: border-box;
+  box-shadow: 2px 2px 10px 0 #eee;
+  margin: 50px 5% 0 5%;
+  padding: 20px;
+  width: 40%;
+}
 .schedule-table {
   margin: 0 auto 40px auto;
   font-size: 1.5em;
+  text-align: center;
 }
 
 .schedule-table th,
