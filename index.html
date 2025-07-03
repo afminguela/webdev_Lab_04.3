@@ -20,8 +20,6 @@
   <!-- -------------------- Header      ----------------------->
   <header class="jeader">
     
-      
-   
     <h1><img src="https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironhack-skydive-logo.png"
         alt="IronSkydive Logo">IRONSKYDIVE </h1>
     <h2>Let the trip begin</h2>
@@ -31,7 +29,7 @@
     </aside>
   </header>
   <!--  --------------- Seccion 1                 ----------------------->
-  <section id="general-information dark-selector">
+  <section id="general-information" class="dark-selector">
     <article>
       <h3>Hello!</h3>
       <p>Wellcome to IronSkydive, the best adventure you will ever have</p>
@@ -52,6 +50,7 @@
   <!--  --------------- Seccion 2 estructure                 ----------------------->
   <section id="structure" class="service-box">
     <h3>How do we structure the day?</h3>
+    <div>
     <article class="service-box">
       <img src="https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironskydive-training.png" class=""
         alt="trining">
@@ -82,10 +81,11 @@
       <h4>Jump!</h4>
       <p>You have done the most complicated. just one step left... Jump!</p>
     </article>
+    </div>
   </section>
 
   <!--  --------------- Seccion 3 team                 ----------------------->
-  <section id="team" class="dark-select">
+  <section id="team" class="dark-selector">
     <h3>Team</h3>
     <p class="text-section">Our team collectively has 75 years of experience. Odds are, when you jump out of the plane
       with these professional, you won´t go splat</p>
@@ -109,7 +109,7 @@
     </div>
   </section>
   <!--  --------------- Seccion 4 schedule       ----------------------->
-  <section id="schedule">
+  <section id="schedule" class="service-box">
     <h3>Schedule</h3>
     <table>
 
@@ -161,9 +161,40 @@
     <h3>Schedule a time slot</h3>
   </section>
 
+  <!-- ----------------- Form ------------------------------------->
+<form class="slot-form" action="/register" method="post">
+        <div class="slot-form-container">
+          <label> Email </label>
+          <input type="email" placeholder="Enter your email">
+        </div>
+
+        <div class="slot-form-container">
+          <label> Participants </label>
+          <input type="Number" placeholder="Number of participants">
+        </div>
+
+        <div class="slot-form-container">
+          <label> Date </label>
+          <input type="date">
+        </div>
+
+        <div class="slot-form-container">
+          <label> Time </label>
+          <select>
+            <option value="early">9:00 - 11:00</option>
+            <option value="mid">12:00 - 14:00</option>
+            <option value="late">15:00 - 17:00</option>
+          </select>
+        </div>
+
+        <div class="slot-form-container">
+          <button type="submit">Reserve Your Slot!</button>
+        </div>
+      </form>
+
   <!--  --------------- FOOTER                ----------------------->
-  <footer>
-    <section class=" dark-selector footer">
+  <footer id="foot" class="dark-selector footer">
+    <section >
       <h5> Contact Information</h5>
       <address>IronSkydive <br> 33 Rue la Fayette, <br> 75009 Paris,<br> France <br> +33 (0) 619 193 088</address>
       <h5> Follow Us</h5>
@@ -173,6 +204,7 @@
         <li><a href="#" target="_blank">Instagram</a></li>
       </ul>
     </section>
+    <iframe class="map-frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.291487557259!2d2.3882800999999945!3d48.8526518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6720b28a2a8bf%3A0xd56f3d673a21a974!2s226%20Bd%20Voltaire%2C%2075011%20Paris%2C%20Francia!5e0!3m2!1ses!2ses!4v1751547020293!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </footer>
 </body>
 
